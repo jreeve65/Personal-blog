@@ -17,9 +17,13 @@ body{
     border: solid white;
     border-radius: 50%;
 }
-#submission{
+#container{
     padding: 36px;
 
+
+}
+#blogcontent{
+    resize: none;
 }
 
 section{
