@@ -1,20 +1,37 @@
 body{
     background-color: #500b50;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #sun{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     padding: auto;
-}
-#sun div{
+
     display: inline-block;
     text-align: center;
-    margin: 300px;
+    margin: 15px;
     padding: 300px;
     color: white;
     background-color: black;
     border: solid white;
     border-radius: 50%;
+}
+#submission{
+    padding: 36px;
+
+}
+
+section{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    color:black;
+}
+
+form{
+    margin: 15px;
+    padding: 300px;
+    background-color: gray;
 }
