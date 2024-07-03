@@ -2,7 +2,7 @@ const form = document.querySelector("form");
 const userNameInput = document.querySelector("#username"); // takes submitted form username
 const blogTitleInput = document.querySelector("#blogtitle");//takes the title of the form
 const contentInput = document.querySelector("#blogcontent");// takes the blog content of the form
-const posts = [];
+// const posts = [];
 const handleFormSubmit = function (event) { //takes the form submission, stores it in an object and then takes the object to local storage.
 
     event.preventDefault();
@@ -19,7 +19,9 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
     // console.log(newPost.userName);
     // console.log(newPost.blogTitle);
     // console.log(newPost.content);
-    posts.push(newPost);
+    // posts.push(newPost);
+    localStorage.clear();
+    localStorage.setItem("post",JSON.stringify(newPost));
     
 }
 form.addEventListener("submit", handleFormSubmit);
