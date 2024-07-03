@@ -1,3 +1,13 @@
 body{
     background-color: Red;
 }
+.card{
+    border: solid;
+    border-color:black;
+    margin:15px;
+}
+.card h1{
+    font-size: large;
+    border-bottom: solid;
+    border-color:black;
+}
