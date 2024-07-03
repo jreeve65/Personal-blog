@@ -23,6 +23,7 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
 
     // takes the updates the local storage to reflect new data in the array.  
     localStorage.setItem("posts",JSON.stringify(blogData));
+    location.href ="./blog.html";
         
 }
 form.addEventListener("submit", handleFormSubmit);
