@@ -1,6 +1,9 @@
+//=================================Queries=======================================
 const body = document.body;
 //creates a cost varible to read data in local storage
 const blogData = getLocalStorage();
+
+//=================================Functions=======================================
 function displayData(index) {
     //creates element to contain the post we will appened everything later in function to this parent
     const postContainer = document.createElement('section');
@@ -15,12 +18,12 @@ function displayData(index) {
     const postUsername = document.createElement('p');
     postUsername.textContent = `Posted by: ${blogData[index].userName}`;
     //appends text of newly created elements to post container
-    postContainer.append(postHeader,h1El,postContent,postUsername);
+    postContainer.append(postHeader, h1El, postContent, postUsername);
     //appends postcontainer to the page.
     body.append(postContainer);
 }
-
+//============================For displaying output=============================
 for (let i = 0; i < blogData.length; i++) {
-     displayData(i)
+    displayData(i)
 }
 
