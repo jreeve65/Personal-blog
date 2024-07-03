@@ -3,7 +3,6 @@ const userNameInput = document.querySelector("#username"); // takes submitted fo
 const blogTitleInput = document.querySelector("#blogtitle");//takes the title of the form
 const contentInput = document.querySelector("#blogcontent");// takes the blog content of the form
 //const link = document.querySelector(a);
-// const posts = [];
 const handleFormSubmit = function (event) { //takes the form submission, stores it in an object and then takes the object to local storage.
 
     event.preventDefault();
@@ -20,9 +19,12 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
     // console.log(newPost.userName);
     // console.log(newPost.blogTitle);
     // console.log(newPost.content);
-    // posts.push(newPost);
-    localStorage.clear();
-    localStorage.setItem("post",JSON.stringify(newPost));
+    const blogData= getLocalStorage(); // this is either a new array or all the blogs that have been put in storage.
+    // add the new created post to the existing data.
+    blogData.push(newPost);
+
+    // takes the updates the local storage to reflect new data in the array.  
+    localStorage.setItem("posts",JSON.stringify(blogData));
         
 }
 form.addEventListener("submit", handleFormSubmit);

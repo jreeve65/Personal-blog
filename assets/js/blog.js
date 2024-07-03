@@ -1,9 +1,6 @@
-const dataToStore = JSON.parse(localStorage.getItem("post"));
-const posts = [];
-posts.push(dataToStore);
+const blogData = getLocalStorage();
 
-for(let i =0; i< posts.length;i++) {
-    console.log(posts[i].userName);
-    console.log(posts[i].blogTitle);
-    console.log(posts[i].content);
+for (let i = 0; i < blogData.length; i++) {
+    console.log(blogData[i]);
 }
+
