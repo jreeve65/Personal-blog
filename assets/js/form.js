@@ -16,10 +16,8 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
         blogTitle: blogTitleInput.value.trim(),
         content: contentInput.value.trim(),
     }
-    // console.log(newPost.userName);
-    // console.log(newPost.blogTitle);
-    // console.log(newPost.content);
-    const blogData= getLocalStorage(); // this is either a new array or all the blogs that have been put in storage.
+    // this is either a new array or all the blogs that have been put in storage.
+    const blogData= getLocalStorage(); 
     // add the new created post to the existing data.
     blogData.push(newPost);
 
