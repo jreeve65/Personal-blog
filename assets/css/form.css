@@ -1,5 +1,5 @@
 body{
-    background-color: #500b50;
+    /* background-color: #500b50; */
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -12,7 +12,7 @@ body{
     text-align: center;
     margin: 15px;
     padding: 300px;
-    color: white;
+    color: #f8f88f;
     background-color: black;
     border: solid white;
     border-radius: 50%;
@@ -31,11 +31,16 @@ section{
     justify-content: center;
     align-items: center;
     border: solid;
-    color:black;
+    border-color: #f8f88f;
 }
 
 form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 15px;
     padding: 300px;
-    background-color: gray;
+    background-color: blueviolet;
+    color: yellow;
 }

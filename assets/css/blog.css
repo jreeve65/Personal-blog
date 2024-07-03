@@ -1,13 +1,23 @@
-body{
-    background-color: Red;
+/* body{
+    background-color: #03032b;
+
+} */
+#pageHeader{
+    margin:10px;
+    padding: 20px;
+    border-bottom: solid;
+    border-width: thick;
+    border-color:white;
 }
 .card{
+    background-color: blueviolet;
     border: solid;
     border-color:black;
     margin:15px;
+    color:white;
 }
 .card h1{
-    font-size: large;
+    font-size: x-large;
     border-bottom: solid;
     border-color:black;
 }
