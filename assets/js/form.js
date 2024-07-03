@@ -25,3 +25,4 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
 form.addEventListener("submit", handleFormSubmit);
 // console.log(posts[0].blogTitle);
 // console.log(posts[0].content);
+console.log(posts);// if posts is a global array why cant i access it out side of add event listener function?
