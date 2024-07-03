@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const userNameInput = document.querySelector("#username"); // takes submitted form username
 const blogTitleInput = document.querySelector("#blogtitle");//takes the title of the form
 const contentInput = document.querySelector("#blogcontent");// takes the blog content of the form
+//const link = document.querySelector(a);
 // const posts = [];
 const handleFormSubmit = function (event) { //takes the form submission, stores it in an object and then takes the object to local storage.
 
@@ -22,9 +23,9 @@ const handleFormSubmit = function (event) { //takes the form submission, stores 
     // posts.push(newPost);
     localStorage.clear();
     localStorage.setItem("post",JSON.stringify(newPost));
-    
+        
 }
 form.addEventListener("submit", handleFormSubmit);
 // console.log(posts[0].blogTitle);
 // console.log(posts[0].content);
-console.log(posts);// if posts is a global array why cant i access it out side of add event listener function?
+//console.log(posts); if posts is a global array why cant i access it out side of add event listener function?
