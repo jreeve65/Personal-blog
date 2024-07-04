@@ -17,22 +17,29 @@ body{
     border: solid white;
     border-radius: 50%;
 }
-#container{
+.container.dark{
+    border-left: solid;
+    border-width: thick ;
+    border-color:#f8f88f;
+    padding:5rem;
+}
+/* #container{
     padding: 36px;
 
 
-}
+} */
 #blogcontent{
     resize: none;
 }
 
 section{
+    margin:20px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: solid;
-    border-color: #f8f88f;
-}
+    /* border: solid;
+    border-color: #f8f88f;*/
+} 
 
 form{
     display:flex;
