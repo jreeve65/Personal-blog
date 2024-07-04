@@ -22,7 +22,7 @@
 
 
 /* =============================================================================Darktheme================================================================================================================= */
-#pageHeader {
+#dark_pageHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -32,7 +32,7 @@
     border-width: thick;
     border-color: white;
 }
-#pageHeader a{
+#dark_pageHeader a{
     color: yellow;
 }
     
@@ -50,3 +50,28 @@
     border-color: #f8f88f;
 }
 
+/* ============================================================================Light Theme================================================================================================= */
+#light_pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: solid;
+    border-width: thick;
+    border-color: black;
+}
+
+#light_pageHeader a{
+    color: black;
+}
+
+.light{
+    background-color: whitesmoke;
+    border-color:black;
+    color: black;
+}
+
+.card.light h1{
+    border-color: black;
+}
