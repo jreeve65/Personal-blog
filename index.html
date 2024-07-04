@@ -9,28 +9,31 @@
     <link rel="stylesheet" href="./assets/css/form.css">
 </head>
 
-<body class ='dark_body'>
+<body class='light_body'>
     <header>
+        <h1>What is on your mind</h1>
     </header>
-    <section class="dark">
-        <div class="dark" id="sun_dark">
-            <h1>Placeholder Text</h1>
-        </div>
+    <main>
+        <section>
+            <div class="dark" id="sun_light">
+                <h1>Placeholder Text</h1>
+            </div>
 
-    </section>
-    <section class ="container dark">
-        <form>
-            <label for="username">Username</label>
-            <input id="username" type="text" />
-            <label for="blogtitle">Blog Title</label>
-            <input id="blogtitle" type="text" />
-            <label for="blogcontent">Content</label>
-            <textarea id="blogcontent" type="text"></textarea>
-            <input type="submit" value="Submit Post" />
+        </section>
+        <section class="container light">
+            <form class="light">
+                <label for="username">Username</label>
+                <input id="username" type="text" />
+                <label for="blogtitle">Blog Title</label>
+                <input id="blogtitle" type="text" />
+                <label for="blogcontent">Content</label>
+                <textarea id="blogcontent" type="text"></textarea>
+                <input type="submit" value="Submit Post" />
 
 
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 

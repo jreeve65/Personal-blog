@@ -1,5 +1,11 @@
-body {
-    /* background-color: #500b50; */
+
+header{
+    margin:15px;
+    padding: 30px;
+    border-bottom: solid;
+    border-width: Thick;
+}
+main{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,7 +63,12 @@ form {
 
 
 /* =========================================================================================Dark Theme======================================================================================== */
-
+.dark header{
+    border-color:#f8f88f;
+}
+.dark header h1{
+    color: yellow;
+}
 .dark form {
     background-color: blueviolet;
     color: yellow;
@@ -80,4 +91,37 @@ form {
     background-color: black;
     border: solid white;
     border-radius: 50%;
+}
+
+/* ============================================================================LightTheme================================================================================================= */
+#sun_light{
+    margin: auto;
+    padding: auto;
+
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    padding: 300px;
+    color: black;
+    background-color: gold;
+    border: solid yellow;
+    border-radius: 50%;
+}
+
+.container.light {
+    border-color: black;
+
+}
+
+.light form {
+    background-color:whitesmoke;
+    color: black;
+}
+
+.light header{
+    border-color: black;
+}
+
+.light header h1{
+    color: black;
 }
