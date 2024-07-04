@@ -2,6 +2,26 @@
     background-color: #03032b;
 
 } */
+
+
+
+.card{
+    /* background-color: blueviolet; */
+    border: solid;
+    /* border-color: #f8f88f; */
+    margin: 15px;
+    /* color: white; */
+}
+
+.card h1 {
+    font-size: x-large;
+    border-bottom: solid;
+    /* border-color: #f8f88f; */
+}
+
+
+
+/* =============================================================================Darktheme================================================================================================================= */
 #pageHeader {
     display: flex;
     justify-content: space-between;
@@ -15,17 +35,18 @@
 #pageHeader a{
     color: yellow;
 }
-
-.card {
+    
+.dark{
     background-color: blueviolet;
-    border: solid;
+    /* border: solid; */
     border-color: #f8f88f;
-    margin: 15px;
+    /* margin: 15px; */
     color: white;
 }
 
-.card h1 {
-    font-size: x-large;
-    border-bottom: solid;
+.card.dark h1 {
+    /* font-size: x-large;
+    border-bottom: solid; */
     border-color: #f8f88f;
 }
+

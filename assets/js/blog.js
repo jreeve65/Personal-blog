@@ -20,7 +20,7 @@ function displayData(index) {
     //appends text of newly created elements to post container
     postContainer.append(postHeader, h1El, postContent, postUsername);
     //appends postcontainer to the page.
-    postContainer.classList.add("card");
+    postContainer.classList.add("card","dark");
     body.append(postContainer);
 }
 //============================For displaying output=============================
