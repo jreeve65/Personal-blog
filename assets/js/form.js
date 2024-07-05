@@ -2,12 +2,17 @@ const form = document.querySelector("form");
 const userNameInput = document.querySelector("#username"); // takes submitted form username
 const blogTitleInput = document.querySelector("#blogtitle");//takes the title of the form
 const contentInput = document.querySelector("#blogcontent");// takes the blog content of the form
-//const link = document.querySelector(a);
+const mess = document.getElementById('error');
 const handleFormSubmit = function (event) { //takes the form submission, stores it in an object and then takes the object to local storage.
 
     event.preventDefault();
     if (userNameInput.value == "" || blogTitleInput == "" || contentInput == "") {
-        console.log("must have all fields filled out");
+        mess.style = "color: red";
+        mess.textContent="All Fields must be filled out";
+        setTimeout(function(){
+            mess.textContent = "";
+        
+        },3000);
         return;
     }
     //object created to store all values in the array.
